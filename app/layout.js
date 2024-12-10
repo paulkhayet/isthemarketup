@@ -11,8 +11,18 @@ export default async function RootLayout({ children }) {
   // Fetch market status from the database
   const { marketStatus } = await getMarketStatus();
 
-  // Determine background color based on market status
-  const backgroundColor = marketStatus === 'Up' ? '#99e8a4' : '#f0c0c0';
+  let backgroundColor;
+
+  if (marketStatus === 'Up') {
+    // Set to green
+    backgroundColor = '#99e8a4';
+  } else if (marketStatus === 'Down') {
+    // Set to red
+    backgroundColor = '#f0c0c0';
+  } else {
+    // Set to grey
+    backgroundColor = '#636363';
+  }
 
   return (
     <html lang="en">
@@ -30,9 +40,10 @@ async function getMarketStatus() {
   let client;
   try {
     client = await MongoClient.connect(mongoUri);
-    const db = client.db('SP500'); // Updated database name
-    const collection = db.collection('Quote'); // Collection name is Quote
-
+    // Change this to match the same DB and collection as page.js
+    const db = client.db('IndexFunds'); // Use the same database used in page.js
+    const collection = db.collection('SP500'); // Use the same collection used in page.js
+    
     // Fetch the document for SPY
     const doc = await collection.findOne({ symbol: 'SPY' });
 
