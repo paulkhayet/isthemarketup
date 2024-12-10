@@ -145,4 +145,5 @@ const boxesContainerStyle = {
   justifyContent: 'center',
   alignItems: 'flex-start',
   marginTop: '30px',
+  flexWrap: 'wrap',
 };
