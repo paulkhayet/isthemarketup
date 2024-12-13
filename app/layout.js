@@ -3,8 +3,8 @@ import { MongoClient } from 'mongodb';
 export const revalidate = 0;
 
 export const metadata = {
-  title: 'Is The Market Up?',
-  description: 'Check if the stock market is up or down today.',
+  title: 'Are the Markets Up?',
+  description: 'Check if the markets are up or down today.',
 };
 
 export default async function RootLayout({ children }) {
