@@ -38,7 +38,7 @@ export default function UnsubscribePage() {
   return (
     <div style={containerStyle}>
       <h1>Unsubscribe</h1>
-      <p>If you'd like to stop receiving our emails, please enter your email below:</p>
+      <p>If you would like to stop receiving our emails, please enter your email below:</p>
       <form onSubmit={handleUnsubscribe} style={formStyle}>
         <input
           type="email"
