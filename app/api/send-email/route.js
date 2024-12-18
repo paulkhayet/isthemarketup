@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { MongoClient, ObjectId } from 'mongodb';
+import { MongoClient} from 'mongodb';
 
 export const revalidate = 0;
 
@@ -159,12 +159,6 @@ function getEmailHTML(sp500, nasdaq, dow) {
 `;
 }
 
-function getStatusClass(status) {
-  if (status === 'Up') return 'up';
-  if (status === 'Flat') return 'flat';
-  if (status === 'Down') return 'down';
-  return 'unavailable';
-}
 
 function getBoxColor(status) {
   if (status === 'Up') return '#66b366';
