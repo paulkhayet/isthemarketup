@@ -143,7 +143,7 @@ function getEmailHTML(sp500, nasdaq, dow) {
           <tr>
             <td style="text-align:center; padding-top:30px;">
               <p style="margin:0; font-size:12px; color:${bodyTextColor};">
-                Data updated at 1:30 PM PST daily, showing market closing prices.
+                Data updates at 1:30 PM PST daily, showing market closing prices.
               </p>
               <p style="margin:10px 0 0 0; font-size:12px; color:${bodyTextColor};">
                 If you no longer wish to receive these emails, <a href="https://www.arethemarketsup.com/unsubscribe" style="color:${bodyTextColor}; text-decoration:underline;">click here to unsubscribe</a>.
