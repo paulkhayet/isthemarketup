@@ -2,7 +2,7 @@
     "crons": [
       {
         "path": "/api/send-email",
-        "schedule": "0 35 21 ? * MON-FRI *"
+        "schedule": "35 21 * * 1-5"
       }
     ]
-  }
+  }  
