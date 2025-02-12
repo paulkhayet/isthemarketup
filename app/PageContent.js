@@ -66,7 +66,7 @@ export default function PageContent({ sp500Status, sp500Percent, nasdaqStatus, n
           {/* Tooltip shown conditionally */}
           {showTooltip && (
             <div style={tooltipStyle}>
-              The site updates at 1:30pm PST every day, therefore it only displays the market closing price.
+              The site updates at 2pm PST every day, therefore it only displays the market closing price.
             </div>
           )}
         </div>
